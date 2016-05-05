@@ -49,6 +49,7 @@ UI.menu("Plugins").add_item("Creation Bac") {
         model      = Sketchup.active_model
         entities   = model.entities
         extrusion  = entities.add_face extrude
+        extrusion.reverse!
         extrusion.pushpull hauteur - epaisseur
     end
 
